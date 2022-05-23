@@ -1,1 +1,1 @@
-# Python_Console_Projects
+These are console projects created with Python
