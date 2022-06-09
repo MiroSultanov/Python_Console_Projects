@@ -1,0 +1,11 @@
+cat
+dog
+fish
+red
+blue
+green
+yellow
+bear
+monster
+food
+music
