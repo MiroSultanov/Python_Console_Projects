@@ -1,3 +1,5 @@
+# Here write your own words that you will guess
+
 cat
 dog
 fish
