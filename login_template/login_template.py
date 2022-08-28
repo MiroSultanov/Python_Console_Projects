@@ -1,0 +1,48 @@
+from tkinter import *
+def click():
+      #while True:
+          btn2 = Button(frame, text="view info", command=go)
+          btn2.grid(row=6)
+def go():
+          username = Label(frame, text="User name")
+          username.grid(row=7)
+          phone = Label(frame, text="phone")
+          phone.grid(row=8)
+          password = Label(frame, text="Password")
+          password.grid(row=9)
+          result1= Label(frame, text=entry1value.get())
+          result1.grid(row=7, column=2)
+          result2 = Label(frame, text=entry2.get())
+          result2.grid(row=8, column=2)
+          result3 = Label(frame, text=entry3.get())
+          result3.grid(row=9, column=2)
+root = Tk()
+root.title("Facebook login")
+# labels
+label = Label(root, text="Login template in tkinter" )
+label.grid(row=0, column=0, pady=30)
+frame = Frame(root)
+frame.grid()
+label2 = Label(frame, text="User Name")
+label2.grid(row=1)
+label3 = Label(frame, text="phone number")
+label3.grid(row=2)
+label4 = Label(frame, text="Password")
+label4.grid(row=3)
+#variables
+entry1value=StringVar()
+entry2value=StringVar()
+entry3value=StringVar()
+#entry boxes
+entry1 = Entry(frame, textvariable=entry1value, width=30)
+entry1.grid(row=1, column=2)
+entry2 = Entry(frame, textvariable=entry2value, width=30)
+entry2.grid(row=2, column=2)
+entry3 = Entry(frame, textvariable=entry3value, width=30)
+entry3.grid(row=3, column=2)
+#button
+btn = Button(frame, text="Login", command=click)
+btn.grid(row=4, pady=30)
+#btn2 = Button(frame, text="view info", command=go)
+#btn2.grid(row=9)
+root.mainloop()
